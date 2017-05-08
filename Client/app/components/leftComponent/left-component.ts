@@ -2,7 +2,7 @@
  * Created by Bar Saadon on 23/01/2017.
  */
 import {Component, Output, EventEmitter} from '@angular/core';
-import { IStudent } from '../..//components/leftComponent/student';
+import { IStudent } from '../../components/leftComponent/student';
 
 // import classElement = ts.ScriptElementKind.classElement;
 // import removeItemFromSet = ts.server.removeItemFromSet;
@@ -50,8 +50,8 @@ export class LeftComponent {
     ];
 
     thisStudent  = this.students[0];
-    @Output() studentClicked = new EventEmitter();
-
+    // @Output() studentClicked = new EventEmitter();
+    public studentClicked = false;
     constructor() {
         // this.name = 'Bar Saadon';
     }
@@ -59,15 +59,16 @@ export class LeftComponent {
     public studentClicked = false;
 
 
-    ClickStudent(){
+    ClickStudent(std:any){
         console.debug('CLICKED!!');
+        this.thisStudent=std;
         this.studentClicked = !this.studentClicked;
     }
 
 
 
     ClickDeleteStudent(){
-        // this.studentClicked = false;
+        this.studentClicked = false;
         // this.students[];
 
         console.debug('DELETE!!');
