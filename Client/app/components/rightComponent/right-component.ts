@@ -10,6 +10,9 @@ import {Component} from '@angular/core';
 })
 export class RightComponent {
     name: string;
+    onitStatus: string;
+    cssOnitOn = true;
+
     courses = [{'name': 'Math', 'id': '0'},
         {'name': 'English', 'id': '1'},
         {'name': 'Programing', 'id': '2'},
@@ -22,6 +25,7 @@ export class RightComponent {
 
 
     public courseClicked = false;
+    onitStatus = "ONIT";
 
     constructor() {
         // this.name = 'Course Name List';
@@ -38,5 +42,15 @@ export class RightComponent {
     onClick(deleteCourse){
         console.debug('DELETE BTN');
         this.courseClicked = false;
+    }
+
+    startStop(){
+        if (this.onitStatus = "ONIT"){
+            this.onitStatus = "ON WORK";
+            this.cssOnitOn = false;
+        }else{
+            this.onitStatus = "ONIT";
+            this.cssOnitOn = true;
+        }
     }
 }
