@@ -1,25 +1,26 @@
-<div class="right-container">
+<div class="right-container" style="background-color:lightblue">
 
     <div class="course-list">
-        <p>Course List</p>
+        <h4><b>Task List for project ___ :</b></h4>
         <ul>
-            <li class="click-list" *ngFor="let course of courses"
+            <li class="click-list text-left" *ngFor="let course of courses"
                 (click)="ClickCourse(course)">{{course.name}}
             </li>
         </ul>
     </div>
 
     <div class="course-details" *ngIf="courseClicked">
-        <div class="col-md-12 text-left"><h3>Course Details</h3></div>
+        <div class="col-md-12 text-left"><h3>Task Details</h3></div>
         <div class="col-md-12">
-            <ul class="text-details">
-                <li>Name: {{thisCourse.name}}</li>
-                <li>ID: {{thisCourse.id}}</li>
+            <ul  class="text-details">
+                <li class="text-left" >Name: {{thisCourse.name}}</li>
+                <li class="text-left">ID: {{thisCourse.id}}</li>
+                   <button class="On It"  style="color:red"><b> On It </b> </button>  <!--btn is either red or green-->
             </ul>
         </div>
 
         <div class="col-md-12 text-right" *ngIf="courseClicked">
-            <button class="btn-remove" (click)="onClick(deleteCourse)">Delete Course</button>
+            <button class="btn-remove" (click)="onClick(deleteCourse)">Remove</button>
         </div>
     </div>
 

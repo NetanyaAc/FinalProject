@@ -1,3 +1,7 @@
+
+body{background-color:lightcyan;}
+
+
 .text-left{
     text-align: left;
 }
@@ -44,3 +48,10 @@
     cursor: pointer;
     border: none;
 }
+
+@media (max-width: 600px){
+    .btn-remove{
+        background-color: blue;
+    }
+}
+

@@ -10,12 +10,13 @@ import {Component} from '@angular/core';
 })
 export class RightComponent {
     name: string;
-    courses = [{'name': 'Math', 'id': '0'},
-        {'name': 'English', 'id': '1'},
-        {'name': 'Programing', 'id': '2'},
-        {'name': 'Data Mining', 'id': '3'},
-        {'name': 'Statistic', 'id': '4'},
-        {'name': 'Algorithm', 'id': '5'}
+    courses = [
+        {'name': 'task1: build', 'id': '1'},
+        {'name': 'task2: Report', 'id': '2'},
+        {'name': 'task3: Overview', 'id': '3'},
+        {'name': 'task4: Dwell', 'id': '4'},
+        {'name': 'task5: Control', 'id': '5'},
+        {'name': 'task6: Operate', 'id': '6'}
     ];
 
     thisCourse = this.courses[0];
@@ -39,4 +40,6 @@ export class RightComponent {
         console.debug('DELETE BTN');
         this.courseClicked = false;
     }
+
+    
 }

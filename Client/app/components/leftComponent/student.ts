@@ -2,9 +2,9 @@
  * Created by Bar Saadon on 02/04/2017.
  */
 export interface IStudent {
-    name : string;
-    id: number;
-    age: number;
-    city: string;
-    lang: string;
+    Pname : string;
+    projectNum: number;
+    days_to_finish: number;
+    department_city: string;
+    
 }

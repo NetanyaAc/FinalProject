@@ -18,34 +18,35 @@ import { IStudent } from '../../components/leftComponent/student';
 export class LeftComponent {
     name: string;
 
+    Pname : string;
+    projectNum: number;
+    days_to_finish: number;
+    department_city: string;
+
     students: IStudent[] = [
         {
-            "name": "Bar",
-            "id": 0,
-            "age": 25,
-            "city": "Netanya",
-            "lang": "Hebrew"
+            "Pname": "Project1- Design",
+            "projectNum": 111,
+            "days_to_finish": 25,
+            "department_city": "Netanya",
         },
         {
-            "name": "Netalie",
-            "id": 1,
-            "age": 28,
-            "city": "Netanya",
-            "lang": "Hebrew"
+            "Pname": "project2- Build",
+            "projectNum": 222,
+            "days_to_finish": 12,
+            "department_city": "Netanya",
         },
         {
-            "name": "David",
-            "id": 2,
-            "age": 35,
-            "city": "New York",
-            "lang": "English"
+             "Pname": "project3- Code",
+            "projectNum": 333,
+            "days_to_finish": 22,
+            "department_city": "Raanana"
         },
         {
-            "name": "Ben",
-            "id": 3,
-            "age": 25,
-            "city": "Barcelona",
-            "lang": "Spanish"
+             "Pname": "project4- Engineering",
+            "projectNum": 444,
+            "days_to_finish": 30,
+            "department_city": "Haifa"
         }
     ];
 
@@ -56,7 +57,7 @@ export class LeftComponent {
         // this.name = 'Bar Saadon';
     }
 
-    public studentClicked = false;
+    // public studentClicked = false;
 
 
     ClickStudent(std:any){
@@ -65,6 +66,10 @@ export class LeftComponent {
         this.studentClicked = !this.studentClicked;
     }
 
+ openFriends(std:any){
+       alert("Friends List: Karin 0541111111, Bar 0542222222, Oren 0543333333");
+       prompt("type question for friend")  //question may be sent to contact selected from list above.    
+         }
 
 
     ClickDeleteStudent(){
