@@ -10,19 +10,23 @@ import {Component} from '@angular/core';
 })
 export class RightComponent {
     name: string;
-    courses = [
+    onitStatus: string;
+    cssOnitOn = true;
+
         {'name': 'task1: build', 'id': '1'},
         {'name': 'task2: Report', 'id': '2'},
         {'name': 'task3: Overview', 'id': '3'},
         {'name': 'task4: Dwell', 'id': '4'},
         {'name': 'task5: Control', 'id': '5'},
         {'name': 'task6: Operate', 'id': '6'}
+
     ];
 
     thisCourse = this.courses[0];
 
 
     public courseClicked = false;
+    onitStatus = "ONIT";
 
     constructor() {
         // this.name = 'Course Name List';
@@ -39,6 +43,16 @@ export class RightComponent {
     onClick(deleteCourse){
         console.debug('DELETE BTN');
         this.courseClicked = false;
+    }
+
+    startStop(){
+        if (this.onitStatus = "ONIT"){
+            this.onitStatus = "ON WORK";
+            this.cssOnitOn = false;
+        }else{
+            this.onitStatus = "ONIT";
+            this.cssOnitOn = true;
+        }
     }
 
     

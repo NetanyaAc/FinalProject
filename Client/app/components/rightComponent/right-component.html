@@ -18,8 +18,11 @@
                    <button class="On It"  style="color:red"><b> On It </b> </button>  <!--btn is either red or green-->
             </ul>
         </div>
+        <div class="on-it-area col-sm-12">
+            <button [ngClass]="{'btn-onit': cssOnitOn, 'btn-onwork': !cssOnitOn}" (click)="startStop()">{{onitStatus}}</button>
+        </div>
 
-        <div class="col-md-12 text-right" *ngIf="courseClicked">
+        <div class="col-md-12 text-right">
             <button class="btn-remove" (click)="onClick(deleteCourse)">Remove</button>
         </div>
     </div>
