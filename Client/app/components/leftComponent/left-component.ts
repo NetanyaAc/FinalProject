@@ -68,7 +68,7 @@ export class LeftComponent {
 
  openFriends(std:any){
        alert("Friends List: Karin 0541111111, Bar 0542222222, Oren 0543333333");
-       prompt("type question for friend")  //question may be sent to contact selected from list above.    
+       prompt("type question for friend");  //question may be sent to contact selected from list above.    
          }
 
 
@@ -80,3 +80,21 @@ export class LeftComponent {
     }
 
 }
+
+
+
+/*
+ project ideas:
+ on left of project list, list of all names 
+ when click on "friends list", list of friends on project
+ when click on friend, details popup and then option to send prompt message
+ task list on right will sppear only after project selected. 
+ available to remove task and project with a popup "are u sure?""
+ when click on "on it" btn, timer will appear next to btn and btn will turn green with "done" written on it
+ top of page: login details "hello ____" and sign out option.
+ when task done, and click "done", the task will be crossed out
+ when all tasks done in project, a check V will appear next to project. or color green while others are red.
+ maybe a dialogue box getting messages from other contacts via friends list + prompt.
+ and also available to send messages to other contacts to their message box when sending prompt. 
+ the message dialogue box will be scrollable, fixed pixals, under friends list btn. 
+ */
