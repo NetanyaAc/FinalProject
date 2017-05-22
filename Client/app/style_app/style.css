@@ -16,6 +16,7 @@ body{background-color:lightcyan;}
     top: 100px;
 }
 .left-container{
+    background-color:lightblue;
     text-align: center;
     height: 100%;
     /*border: 1px solid gray;*/
@@ -82,6 +83,9 @@ body{background-color:lightcyan;}
     border: 1px solid green;
     color: green;
     outline: none;
+}
+.btn-open-friend{
+    color:blue;
 }
 
 @media (max-width: 600px){

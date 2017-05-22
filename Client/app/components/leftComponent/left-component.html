@@ -1,41 +1,48 @@
 
 
-<div class="left-container" style="background-color:lightblue">
-    <div class="student-list">
-        <h4><b>project List:</b></h4>
-        <ul id="list">
-            <li class="click-list text-left" *ngFor="let stud of students"
-                (click)="ClickStudent(stud)"
-                id="{{stud.id}}">{{stud.Pname}}
-            </li>
-        </ul>
-    </div>
-    <!--<student-profile></student-profile>-->
-    <div class="student-profile" *ngIf="studentClicked">
-        <div class="col-md-12 text-left"><h3>Project Info</h3></div>
-        <div class="col-md-3">
-            <pic-user></pic-user>
-        </div>
+<div class="left-container">
 
-        <div class="col-md-9">
-            <ul class="text-details">
-                <li>Name: {{thisStudent.Pname}}</li>
-                <li>ID: {{thisStudent.projectNum}}</li>
-                <li>Days_Left: {{thisStudent.days_to_finish}}</li>
-              
-             <!-- <div class="container"> -->
-                 <button style="color:blue" (click)="openFriends()" >Friends List</button>
-                <!-- <div id="list1" class="collapse">
-                     scscscsdcsdcsd
-                 </div></div>-->
-                 
+    <div class="col-sm-3 name-list">
+        <h4>Name List</h4>
+    </div>
+    <div class="col-sm-9 data-insert">
+        <div class="student-list">
+            <h4><b>project List:</b></h4>
+            <ul id="list">
+                <li class="click-list text-left" *ngFor="let stud of students"
+                    (click)="ClickStudent(stud)"
+                    id="{{stud.id}}">{{stud.Pname}}
+                </li>
             </ul>
         </div>
+        <!--<student-profile></student-profile>-->
+        <div class="student-profile" *ngIf="studentClicked">
+            <div class="col-md-12 text-left"><h3>Project Info</h3></div>
+            <div class="col-md-3">
+                <pic-user></pic-user>
+            </div>
 
-        <div class="col-md-12 text-right" *ngIf="studentClicked">
-            <button class="btn-remove" (click)="ClickDeleteStudent()">Remove</button>
+            <div class="col-md-9">
+                <ul class="text-details">
+                    <li>Name: {{thisStudent.Pname}}</li>
+                    <li>ID: {{thisStudent.projectNum}}</li>
+                    <li>Days_Left: {{thisStudent.days_to_finish}}</li>
+
+                    <!-- <div class="container"> -->
+                    <button class="btn-open-friend" (click)="openFriends()" >Friends List</button>
+                    <!-- <div id="list1" class="collapse">
+                         scscscsdcsdcsd
+                     </div></div>-->
+
+                </ul>
+            </div>
+
+            <div class="col-md-12 text-right" *ngIf="studentClicked">
+                <button class="btn-remove" (click)="ClickDeleteStudent()">Remove</button>
+            </div>
         </div>
     </div>
+
 </div>
 
 

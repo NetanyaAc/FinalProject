@@ -10,6 +10,9 @@ import {Component} from '@angular/core';
 })
 export class RightComponent {
     name: string;
+    onitStatus: string;
+    cssOnitOn = true;
+
     courses = [
         {'name': 'task1: build', 'id': '1'},
         {'name': 'task2: Report', 'id': '2'},
@@ -23,6 +26,7 @@ export class RightComponent {
 
 
     public courseClicked = false;
+    onitStatus = "ONIT";
 
     constructor() {
         // this.name = 'Course Name List';
@@ -41,11 +45,22 @@ export class RightComponent {
         this.courseClicked = false;
     }
 
-onit_clicked(std:any){
-           alert("'On It' clicked + timer on");
-           
-        //change label to DONE and color to GREEN, add timer
+    startStop(){
+        if (this.onitStatus = "ONIT"){
+            this.onitStatus = "ON WORK";
+            this.cssOnitOn = false;
+        }else{
+            this.onitStatus = "ONIT";
+            this.cssOnitOn = true;
+        }
+    }
 
-}
+
+    onit_clicked(){
+               alert("'On It' clicked + timer on");
+
+            //change label to DONE and color to GREEN, add timer
+
+    }
     
 }
