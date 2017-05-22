@@ -16,34 +16,30 @@ var core_1 = require("@angular/core");
 var LeftComponent = (function () {
     function LeftComponent() {
         this.students = [
-            {
-                "name": "Bar",
-                "id": 0,
-                "age": 25,
-                "city": "Netanya",
-                "lang": "Hebrew"
-            },
-            {
-                "name": "Netalie",
-                "id": 1,
-                "age": 28,
-                "city": "Netanya",
-                "lang": "Hebrew"
-            },
-            {
-                "name": "David",
-                "id": 2,
-                "age": 35,
-                "city": "New York",
-                "lang": "English"
-            },
-            {
-                "name": "Ben",
-                "id": 3,
-                "age": 25,
-                "city": "Barcelona",
-                "lang": "Spanish"
-            }
+           {
+            "Pname": "Project1- Design",
+            "projectNum": 111,
+            "days_to_finish": 25,
+            "department_city": "Netanya",
+        },
+        {
+            "Pname": "project2- Build",
+            "projectNum": 222,
+            "days_to_finish": 12,
+            "department_city": "Netanya",
+        },
+        {
+             "Pname": "project3- Code",
+            "projectNum": 333,
+            "days_to_finish": 22,
+            "department_city": "Raanana"
+        },
+        {
+             "Pname": "project4- Engineering",
+            "projectNum": 444,
+            "days_to_finish": 30,
+            "department_city": "Haifa"
+        }
         ];
         this.thisStudent = this.students[0];
         // @Output() studentClicked = new EventEmitter();
