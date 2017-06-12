@@ -18,10 +18,10 @@ import { IStudent } from '../../components/leftComponent/student';
 export class LeftComponent {
     name: string;
 
-    Pname : string;
-    projectNum: number;
-    days_to_finish: number;
-    department_city: string;
+    // Pname : string;
+    // projectNum: number;
+    // days_to_finish: number;
+    // department_city: string;
 
     students: IStudent[] = [
         {
@@ -37,13 +37,13 @@ export class LeftComponent {
             "department_city": "Netanya",
         },
         {
-             "Pname": "project3- Code",
+            "Pname": "project3- Code",
             "projectNum": 333,
             "days_to_finish": 22,
             "department_city": "Raanana"
         },
         {
-             "Pname": "project4- Engineering",
+            "Pname": "project4- Engineering",
             "projectNum": 444,
             "days_to_finish": 30,
             "department_city": "Haifa"

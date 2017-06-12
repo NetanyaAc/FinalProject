@@ -33,3 +33,4 @@
 //         this.studentClicked = false;
 //     }
 // } 
+//# sourceMappingURL=student-profile-comp.js.map

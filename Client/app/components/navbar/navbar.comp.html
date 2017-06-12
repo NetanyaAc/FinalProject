@@ -1,8 +1,13 @@
 <div class="container-navbar">
-    <div class="col-sm-2">
+    <div class="col-sm-1">
         <img class="logo" src="http://vignette1.wikia.nocookie.net/lyricwiki/images/c/cf/Sports_Logo_-_FC_Barcelona.png/revision/latest?cb=20120105094542" alt="logo">
     </div>
-    <div class="col-sm-offset-5 col-sm-5">
+    <div class="col-sm-1">
+        <!--<a [routerLink]="['/component-one']">Home</a>-->
+    </div>
+    <div class="col-sm-1"><a [routerLink]="['/left-component']">leftComp</a></div>
+    <div class="col-sm-1"><a [routerLink]="['/right-component']">rightComp</a></div>
+    <div class="col-sm-offset-5 col-sm-2">
         <div class="dropdown pull-right">
             <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">{{accountName}}
                 <span class="caret"></span></button>
